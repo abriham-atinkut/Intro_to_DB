@@ -22,9 +22,9 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Orders (
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+    order_id INT
     order_date DATE
-    order_id VARCHAR(251)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE Order_Details (
