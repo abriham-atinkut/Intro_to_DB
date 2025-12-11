@@ -7,10 +7,9 @@ db = mysql.connector.connect(
 )
 print("Connected to MySQL Server")
 cursor = db.cursor()
-database_name = "alx_book_store"
 try:
-    cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database_name}")
-    print(f"Database '{database_name}' created successfully!")
+    cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+    print("Database alx_book_store created successfully!")
 except mysql.connector.Error as err:
     print(f"Fail creating database: {err}")
 
