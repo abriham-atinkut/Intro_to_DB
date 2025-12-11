@@ -1,8 +1,7 @@
 SELECT *
-FROM information_schema.COLUMNS
-WHERE table_schema = DATABASE()
-AND table_name = "books"
-ORDER BY ordinal_position;
-
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+AND TABLE_NAME = "books"
+ORDER BY ORDINAL_POSITION;
 
 
