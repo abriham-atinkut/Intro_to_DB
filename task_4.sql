@@ -4,4 +4,4 @@ WHERE TABLE_SCHEMA = "alx_book_store"
 AND TABLE_NAME = "Books"
 ORDER BY ORDINAL_POSITION;
 
-
+ANALYZE TABLE books;
