@@ -7,4 +7,4 @@ ORDER BY ORDINAL_POSITION;
 ANALYZE TABLE books;
 
 
-
+-- ["COLUMN_TYPE", "TABLE_SCHEMA = 'alx_book_store'", "TABLE_NAME = 'Books'"]
